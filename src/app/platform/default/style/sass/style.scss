@@ -1,0 +1,16 @@
+// here you want to import all the scss files you have
+
+//Bring in all the config files needed for styles
+@import "config/color";
+
+//Attempt to clean styles for elements
+@import "clean";
+
+/* Import screen size styles */
+@import "screen/1024";
+
+@import "defaultStyle";
+
+//animations
+@import "animate";
+@import "anim";

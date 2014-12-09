@@ -1,0 +1,386 @@
+// define animations to be used here, some provided here
+
+.enterLeftLeaveLeft {
+  //position: absolute;
+}
+.enterLeftLeaveLeft.ng-enter {
+  display:inline-block;
+  vertical-align: top;
+  position: absolute;
+  -webkit-animation: fadeInLeftBig 1s;
+  -moz-animation: fadeInLeftBig 1s;
+  -ms-animation: fadeInLeftBig 1s;
+  animation: fadeInLeftBig 1s;
+}
+.enterLeftLeaveLeft.ng-leave {
+  display:inline-block;
+  vertical-align: top;
+  position: absolute;
+  -webkit-animation: fadeOutLeftBig 1s;
+  -moz-animation: fadeOutLeftBig 1s;
+  -ms-animation: fadeOutLeftBig 1s;
+  animation: fadeOutLeftBig 1s;
+}
+.enterRightLeaveRight.ng-enter {
+  display:inline-block;
+  vertical-align: top;
+  position: absolute;
+  -webkit-animation: fadeInRightBig 1s;
+  -moz-animation: fadeInRightBig 1s;
+  -ms-animation: fadeInRightBig 1s;
+  animation: fadeInRightBig 1s;
+}
+.enterRightLeaveRight.ng-leave {
+  display:inline-block;
+  vertical-align: top;
+  position: absolute;
+  -webkit-animation: fadeOutRightBig 1s;
+  -moz-animation: fadeOutRightBig 1s;
+  -ms-animation: fadeOutRightBig 1s;
+  animation: fadeOutRightBig 1s;
+}
+
+.fadeInFromBottom.ng-enter {
+    -webkit-animation: fadeInUp 1s;
+    -moz-animation: fadeInUp 1s;
+    -ms-animation: fadeInUp 1s;
+    animation: fadeInUp 1s;
+}
+.fadeInFromTop.ng-enter {
+    -webkit-animation: fadeInDown 1s;
+    -moz-animation: fadeInDown 1s;
+    -ms-animation: fadeInDown 1s;
+    animation: fadeInDown 1s;
+}
+.fadeInFromRight.ng-enter {
+    -webkit-animation: fadeInRight 1s;
+    -moz-animation: fadeInRight 1s;
+    -ms-animation: fadeInRight 1s;
+    animation: fadeInRight 1s;
+}
+.fadeInFromLeft.ng-enter {
+    -webkit-animation: fadeInLeft 1s;
+    -moz-animation: fadeInLeft 1s;
+    -ms-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+.fadeInFromLeft.ng-leave {
+    -webkit-animation: fadeOutLeft 1s;
+    -moz-animation: fadeOutLeft 1s;
+    -ms-animation: fadeOutLeft 1s;
+    animation: fadeOutLeft 1s;
+}
+
+
+
+
+.enterRightOnShow.ng-hide-add.ng-hide-add-active,
+.enterRightOnShow.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all linear 1.0s;
+  transition:all linear 1.0s;
+}
+.enterRightOnShow.ng-hide {
+  right: -1000px;
+}
+
+.enterLeftOnShow.ng-hide-add.ng-hide-add-active,
+.enterLeftOnShow.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all linear 1.0s;
+  transition:all linear 1.0s;
+}
+.enterLeftOnShow.ng-hide {
+  right: -1000px;
+}
+
+
+/* Staggered animation for repeated items */
+
+.enterBounceStaggerIn.ng-enter-stagger,
+.enterBounceStaggerIn.ng-move-stagger {
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2;
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.enterBounceStaggerIn.ng-move,
+.enterBounceStaggerIn.ng-enter,
+.enterBounceStaggerIn.ng-show {
+  opacity:0;
+  -webkit-animation: bounceIn 1.0s;
+  animation: bounceIn 1.0s;
+}
+
+// regular stagger
+.enterBounceStagger.ng-enter-stagger,
+.enterBounceStagger.ng-leave-stagger,
+.enterBounceStagger.ng-move-stagger {
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2;
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.enterBounceStagger.ng-move,
+.enterBounceStagger.ng-enter,
+.enterBounceStagger.ng-show {
+  opacity:0;
+  -webkit-animation: bounceIn 1.0s;
+  animation: bounceIn 1.0s;
+}
+.enterBounceStagger.ng-move.ng-move-active,
+.enterBounceStagger.ng-enter.ng-enter-active {
+  opacity:0;
+  -webkit-animation: bounceIn 1.0s;
+  animation: bounceIn 1.0s;
+}
+
+
+.email-section.ng-enter-stagger,
+.email-section.ng-leave-stagger,
+.email-section.ng-move-stagger {
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2;
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.email-section.ng-move,
+.email-section.ng-enter,
+.email-section.ng-show {
+  opacity:0;
+  -webkit-animation: fadeInDown 0.5s;
+  animation: fadeInDown 0.5s;
+}
+
+.enterFlipStagger.ng-enter-stagger,
+.enterFlipStagger.ng-move-stagger {
+  -webkit-animation-delay:0.1s;
+  animation-delay:0.1;
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.enterFlipStagger.ng-move,
+.enterFlipStagger.ng-enter {
+  opacity:0;
+  -webkit-animation: flipInX 0.5s;
+  animation: flipInX 0.5s;
+}
+.enterFlipStagger.ng-move.ng-move-active,
+.enterFlipStagger.ng-enter.ng-enter-active {
+  opacity:0;
+  -webkit-animation: flipInX 0.5s;
+  animation: flipInX 0.5s;
+}
+
+.enterBounceUpStagger.ng-enter-stagger,
+.enterBounceUpStagger.ng-leave-stagger,
+.enterBounceUpStagger.ng-move-stagger {
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2;
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.enterBounceUpStagger.ng-move,
+.enterBounceUpStagger.ng-enter,
+.enterBounceUpStagger.ng-show {
+  opacity:0;
+  -webkit-animation: bounceInUp 1.0s;
+  animation: bounceInUp 1.0s;
+}
+
+.enterBounceUpStagger.ng-move.ng-move-active,
+.enterBounceUpStagger.ng-enter.ng-enter-active {
+  opacity:0;
+  -webkit-animation: bounceInUp 1.0s;
+  animation: bounceInUp 1.0s;
+}
+
+/************** repeat *************/
+.flipAnimation.ng-enter-stagger,
+.flipAnimation.ng-leave-stagger,
+.flipAnimation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.1s;
+  animation-delay:0.1s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.flipAnimation.ng-move,
+.flipAnimation.ng-enter {
+  opacity:0;
+  -webkit-animation: flipInY 1.0s;
+  animation: flipInY 1.0s;
+}
+
+.fadeDownAnimation.ng-enter-stagger,
+.fadeDownAnimation.ng-leave-stagger,
+.fadeDownAnimation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.1s;
+  animation-delay:0.1s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.fadeDownAnimation.ng-move,
+.fadeDownAnimation.ng-enter {
+  opacity:0;
+  -webkit-animation: fadeInDown 0.2s;
+  animation: fadeInDown 0.2s;
+}
+
+.rightEnterAnimation.ng-enter-stagger,
+.rightEnterAnimation.ng-leave-stagger,
+.rightEnterAnimation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.1s;
+  animation-delay:0.1s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.rightEnterAnimation.ng-move,
+.rightEnterAnimation.ng-enter {
+  opacity:0;
+  -webkit-animation: fadeInRightBig 1.0s;
+  animation: fadeInRightBig 1.0s;
+}
+
+.rightEnterAnimationAtOnce.ng-move,
+.rightEnterAnimationAtOnce.ng-enter {
+  opacity:0;
+  -webkit-animation: fadeInRightBig 1.0s;
+  animation: fadeInRightBig 1.0s;
+}
+
+.leftEnterAnimation.ng-enter-stagger,
+.leftEnterAnimation.ng-leave-stagger,
+.leftEnterAnimation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.1s;
+  animation-delay:0.1s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.leftEnterAnimation.ng-move,
+.leftEnterAnimation.ng-enter {
+  opacity:0;
+  -webkit-animation: fadeInLeftBig 1.0s;
+  animation: fadeInLeftBig 1.0s;
+}
+
+.leftEnterAnimationAtOnce.ng-move,
+.leftEnterAnimationAtOnce.ng-enter {
+  opacity:0;
+  -webkit-animation: fadeInLeftBig 1.0s;
+  animation: fadeInLeftBig 1.0s;
+}
+
+.zoomInAnimationAtOnce.ng-move,
+.zoomInAnimationAtOnce.ng-enter {
+  -webkit-animation: zoomIn 1.0s;
+  animation: zoomIn 1.0s;
+}
+
+.fadeInAnimationAtOnce.ng-move,
+.fadeInAnimationAtOnce.ng-enter {
+  -webkit-animation: fadeIn 1.0s;
+  animation: fadeIn 1.0s;
+}
+
+.rubberBandAnimation.ng-enter-stagger,
+.rubberBandAnimation.ng-leave-stagger,
+.rubberBandAnimation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.1s;
+  animation-delay:0.1s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.rubberBandAnimation.ng-move,
+.rubberBandAnimation.ng-enter {
+  //opacity:0;
+  -webkit-animation: pulse 0.3s;
+  animation: pulse 0.3s;
+}
+
+.repeat-animation.ng-enter-stagger,
+.repeat-animation.ng-leave-stagger,
+.repeat-animation.ng-move-stagger {
+  /* notice how we're using animation instead of transition here */
+  -webkit-animation-delay:0.2s;
+  animation-delay:0.2s;
+
+  /* yes we still need to do this too */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+
+.repeat-animation.ng-move,
+.repeat-animation.ng-enter {
+  opacity:0;
+  -webkit-animation: flipInY 1.0s;
+  animation: flipInY 1.0s;
+}
+
+/***************/
+
+.animate-enter,
+.animate-leave
+{
+    -webkit-transition: 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+}
+
+.animate-enter {
+    left: 100%;
+}
+.animate-enter.animate-enter-active {
+    left: 0;
+}
+
+.animate-leave {
+    left: 0;
+}
+.animate-leave.animate-leave-active{
+    left: -100%;
+}
+
+.flipMe {
+  //width: 100%;
+  //height: 100%;
+  //-moz-transform: rotate(180deg);
+  //-webkit-transform: rotate(180deg);
+  //-ms-transform: rotate(180deg);
+  //-o-transform: rotate(180deg);
+  //transform: rotate(180deg);
+}
+
+/* ANIMATION FOR ROTATION - currently used in special offers */
+
+@keyframes rotate {
+  0%   {transform: rotateX(0deg); }
+  100% {transform: rotateX(180deg);}
+}
+@-webkit-keyframes rotate {
+  0%   {-webkit-transform: rotateX(0deg); }
+  100% {-webkit-transform: rotateX(180deg);}
+}
+
+@keyframes rotateBack {
+  0%   {transform: rotateX(180deg); }
+  100% {transform: rotateX(0deg);}
+}
+@-webkit-keyframes rotateBack {
+  0%   {-webkit-transform: rotateX(180deg); }
+  100% {-webkit-transform: rotateX(0deg);}
+}

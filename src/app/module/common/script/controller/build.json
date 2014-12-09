@@ -1,0 +1,2 @@
+// Name all controllers same as their corresponding views and with a suffix of Ctrl
+// Ex: productDetails.html => productDetailsCtrl.js

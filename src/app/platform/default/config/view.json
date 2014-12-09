@@ -1,0 +1,23 @@
+{
+    "angular": {
+        "views": {
+            "otherwise": {
+                "redirectTo": "/sample"
+            },
+            "sample": {
+                "hash": "/sample",
+                "settings": {
+                    "templateUrl": "{{baseViewPath}}/view/home.html",
+                    "controller": "testCtrl"
+                }
+            },
+            "page": {
+                "hash": "/page",
+                "settings": {
+                    "templateUrl": "{{baseViewPath}}/view/page.html",
+                    "controller": "sampleCtrl"
+                }
+            }
+        }
+    }
+}

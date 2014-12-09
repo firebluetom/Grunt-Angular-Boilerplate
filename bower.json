@@ -1,0 +1,16 @@
+{
+    "version": "0.0.1",
+    "name": "myApp",
+    "author": "",
+    "description": "This project myApp.",
+    "dependencies": {
+        "angular": "1.3.x",
+        "angular-route": "~1.3.x",
+        "angular-resource": "~1.3.x",
+        "jquery": "1.10.2",
+        "angular-animate": "~1.3.x",
+        "angular-sanitize": "~1.3.x",
+        "angular-touch": "~1.3.x",
+        "angular-bindonce": "0.3.2"
+    }
+}

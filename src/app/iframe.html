@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title>iframe to share local storage</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Tomasz Samczynski">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <script>
+            document.domain = window.location.hostname;
+            window.onmessage = function(e) {
+                var payload = JSON.parse(e.data);
+                switch(payload.method) {
+
+                    case 'get':
+                        var parent = window.parent;
+                        var data = localStorage.getItem(payload.key);
+                        parent.postMessage(data, "*");
+                        break;
+                }
+                console.log("localStorage", localStorage);
+            };
+        </script>
+    </head>
+    <body >
+
+    </body>
+</html>

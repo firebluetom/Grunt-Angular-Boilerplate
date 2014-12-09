@@ -1,0 +1,33 @@
+{
+    "war_name": "myApp",
+    "dest": {
+        "target": "",
+        "builds": {
+            "main": "appBuild/",
+            "dev": "dev/",
+            "qa": "qa/",
+            "prod": "prod/"
+        },
+        "src": {
+            "main": "src/app",
+            "java": "src/java",
+            "common": "/module/common",
+            "core": "/module/core",
+            "platform": "/platform"
+        },
+        "bower": {
+            "src": "./script/tmplib/",
+            "concat": "./script/"
+        },
+        "blank": {
+            "src": "blank"
+        }
+    },
+    "fileTypes": {
+        "all": ["**", "!.git", "!readme"],
+        "html": "**/*.html",
+        "scss": "**/*.scss",
+        "javascript": "**/*.js",
+        "assets": ["**/*.png", "**/*.gif", "**/*.ttf", "**/*.cur"]
+    }
+}
