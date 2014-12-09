@@ -1,27 +1,26 @@
 =============
 
-This is a sample template for a project
+This is a sample template to start an angularJS project with Grunt. Great for front end devs, which consume back end services. Very customizable, but most the ground work has been done. Includes two sample modules to show how wiring works.
 
 ## Requirements for local dev
 
 In order to create a local build of this project you must have the following things:
 
- * NodeJs
- * NPM - Nodes package manager
- * Ruby - Used with Compass for SCSS
- * GruntJs - Our Task manager
- * BowerJs
+ * NodeJS - JavaScript runtime environment
+ * NPM - NodeJS package manager (will generally be included with NodeJS)
+ * Ruby & Compass - Used for compiling SCSS to CSS - (must install Ruby and Compass)
+ * GruntJS - Task Runner
+ * Bower - Package manager for the web
 
-Please see the bottom of this document for help with these on Mac/Pc.
 
 ## Installation
 
 ```
 
-$ git clone https://github.com/firebluetom/<this project>.git .
-$ cd /into project directory/
-$ npm install
-$ bower install
+$ git clone https://github.com/firebluetom/grunt-angular-template.git.
+$ cd /into project directory/ Ex: cd grunt-angular-template
+$ npm install (wait)
+$ bower install (wait, then done)
 
 ```
 
