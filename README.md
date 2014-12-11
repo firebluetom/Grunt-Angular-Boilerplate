@@ -120,6 +120,25 @@ to
 
 ---------------------------
 
+## Additional Instructions
+
+Structure of the application is as such:
+
+HTML goes under src/app/platform/default/view, you will need to reference it as such when using  ng-include="'/platform/default/view/myhtml.html'" 
+
+Styles go under platform/default/style, add your scss files here, import inside styles.scss
+
+JavaScript goes in multiple places, depending on what you want to achieve, the code includes some examples of how to create controllers, services, etc. But for the sake of clarity, open src/app/module/common, this directory will contain all your common JS, things that should be available anywhere in the app and doesn't need to be imported. 
+
+The .config and .run methods for the app can be found in <strong>application.js</strong> (src/app/module/common/script)- here you can play with the routeprovider, cache templates ahead of time, run some setup before the rest of the application runs, etc.
+
+general.js - this is where the application is first defined, you can give it a name here and define the dependencies and overall add anything onto the application you wish and it will be globally available where the global variable is injected.
+
+Any modules you wish to add to your application should go into the core folder (src/app/module/core/{{moduleName}}).
+Examples are provided and files are grouped by type (controllers, directives, filters, etc). This structure is not enforced and you can group by feature instead.
+
+---------------------------
+
 ## Troubleshooting
 
 Sometimes your page might not load, here are a few scenarios and fixes
@@ -130,14 +149,3 @@ Sometimes your page might not load, here are a few scenarios and fixes
 2. The landing page loads, but just about everything is missing, nothing on the left or middle of the screen, but the right side may be loaded.
 
 
----------------------------
-
-## Mac Dev Notes
-
-Still waiting...
-
-## Pc Dev Notes
-
-Still waiting...
-
----------------------------
